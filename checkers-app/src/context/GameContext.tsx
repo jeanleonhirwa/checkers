@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useReducer, useCallback, useEffect } from 'react';
-import { GameState, GameSettings, GameMode, Position, Move, Player } from '../types';
+import { createContext, useContext, useReducer, useCallback, useEffect } from 'react';
+import type { GameState, GameSettings, GameMode, Position, Move } from '../types';
 import { createInitialGameState, makeMove, undo, redo } from '../engine/gameLogic';
 import { getValidMovesForPiece, getAllValidMoves } from '../engine/moves';
 import { getBestMove } from '../engine/ai';

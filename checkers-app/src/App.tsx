@@ -1,4 +1,3 @@
-import React from 'react';
 import { GameProvider } from './context/GameContext';
 import { Board, TurnIndicator, Controls, GameInfo } from './components';
 

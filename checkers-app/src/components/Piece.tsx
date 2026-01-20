@@ -1,4 +1,3 @@
-import React from 'react';
 
 interface PieceProps {
   piece: number;

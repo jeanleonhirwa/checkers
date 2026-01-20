@@ -1,4 +1,4 @@
-import { Board, Square, Position, Move, Player } from '../types';
+import type { Board, Square, Position, Player } from '../types';
 
 // Create initial board setup
 export function createInitialBoard(): Board {

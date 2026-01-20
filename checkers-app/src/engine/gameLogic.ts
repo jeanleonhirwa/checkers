@@ -1,4 +1,4 @@
-import { Board, Player, GameState, Move } from '../types';
+import type { Board, Player, GameState, Move } from '../types';
 import { createInitialBoard, countPieces, copyBoard } from './board';
 import { getAllValidMoves, applyMove } from './moves';
 

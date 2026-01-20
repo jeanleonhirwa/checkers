@@ -1,4 +1,4 @@
-import { Board, Player, Move } from '../types';
+import type { Board, Player, Move } from '../types';
 import { countPieces } from './board';
 import { getAllValidMoves, applyMove } from './moves';
 

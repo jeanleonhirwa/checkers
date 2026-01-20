@@ -1,6 +1,5 @@
-import React from 'react';
 import { useGame } from '../context/GameContext';
-import { GameMode } from '../types';
+import type { GameMode } from '../types';
 
 export function Controls() {
   const { 

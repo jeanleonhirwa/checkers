@@ -1,9 +1,8 @@
-import { Board, Position, Move, Player } from '../types';
+import type { Board, Position, Move, Player } from '../types';
 import { 
   isValidPosition, 
   getPiece, 
   belongsToPlayer, 
-  isKing, 
   copyBoard,
   shouldPromote,
   promotePiece

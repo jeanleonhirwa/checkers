@@ -1,5 +1,3 @@
-import React from 'react';
-import { Position, Move } from '../types';
 import { Piece } from './Piece';
 
 interface SquareProps {
