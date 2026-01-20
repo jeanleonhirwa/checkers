@@ -26,7 +26,7 @@ export function Square({
   return (
     <div
       className={`
-        aspect-square flex items-center justify-center
+        flex items-center justify-center
         relative cursor-pointer
         transition-colors duration-150
         ${isDark 
@@ -36,6 +36,7 @@ export function Square({
         ${isValidMove && !isCapture ? 'ring-2 ring-inset ring-green-400' : ''}
         ${isCapture ? 'ring-2 ring-inset ring-red-400' : ''}
       `}
+      style={{ aspectRatio: '1 / 1' }}
       onClick={onClick}
       onKeyDown={onKeyDown}
       tabIndex={isDark ? 0 : -1}
