@@ -43,8 +43,8 @@ export function Board() {
   
   return (
     <div 
-      className="grid grid-cols-8 border-4 border-amber-900 rounded-lg overflow-hidden shadow-2xl"
-      style={{ width: 'min(90vw, 90vh, 500px)', height: 'min(90vw, 90vh, 500px)' }}
+      className="grid grid-cols-8 border-2 border-black shadow-xl"
+      style={{ width: 'min(90vw, 80vh, 480px)', height: 'min(90vw, 80vh, 480px)' }}
       role="grid"
       aria-label="Checkers board"
     >

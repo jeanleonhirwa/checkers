@@ -1,4 +1,3 @@
-
 interface PieceProps {
   piece: number;
   isSelected?: boolean;
@@ -17,18 +16,20 @@ export function Piece({ piece, isSelected }: PieceProps) {
         flex items-center justify-center
         transition-all duration-200
         ${isPlayer1 
-          ? 'bg-gradient-to-br from-red-400 to-red-600 shadow-red-900/50' 
-          : 'bg-gradient-to-br from-gray-200 to-gray-400 shadow-gray-900/50'
+          ? 'bg-black border-2 border-gray-600' 
+          : 'bg-white border-2 border-gray-300'
         }
-        shadow-lg
-        ${isSelected ? 'ring-4 ring-yellow-400 ring-opacity-75 scale-105' : ''}
-        ${isKing ? 'border-2 border-yellow-400' : ''}
+        shadow-md
+        ${isSelected ? 'ring-4 ring-gray-400 ring-opacity-75 scale-105' : ''}
       `}
       role="img"
-      aria-label={`${isPlayer1 ? 'Red' : 'White'} ${isKing ? 'king' : 'piece'}`}
+      aria-label={`${isPlayer1 ? 'Black' : 'White'} ${isKing ? 'king' : 'piece'}`}
     >
       {isKing && (
-        <span className="text-yellow-400 text-lg font-bold select-none" aria-hidden="true">
+        <span 
+          className={`text-lg font-bold select-none ${isPlayer1 ? 'text-white' : 'text-black'}`} 
+          aria-hidden="true"
+        >
           ♔
         </span>
       )}

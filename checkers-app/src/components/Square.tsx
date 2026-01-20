@@ -30,11 +30,11 @@ export function Square({
         relative cursor-pointer
         transition-colors duration-150
         ${isDark 
-          ? 'bg-emerald-800 hover:bg-emerald-700' 
-          : 'bg-amber-100'
+          ? 'bg-gray-800 hover:bg-gray-700' 
+          : 'bg-gray-100'
         }
-        ${isValidMove && !isCapture ? 'ring-2 ring-inset ring-green-400' : ''}
-        ${isCapture ? 'ring-2 ring-inset ring-red-400' : ''}
+        ${isValidMove && !isCapture ? 'ring-2 ring-inset ring-gray-400' : ''}
+        ${isCapture ? 'ring-2 ring-inset ring-black' : ''}
       `}
       style={{ aspectRatio: '1 / 1' }}
       onClick={onClick}
@@ -42,15 +42,15 @@ export function Square({
       tabIndex={isDark ? 0 : -1}
       role="button"
       aria-label={`Square ${String.fromCharCode(65 + col)}${8 - row}${
-        piece !== 0 ? ` with ${piece > 0 ? 'red' : 'white'} ${Math.abs(piece) === 2 ? 'king' : 'piece'}` : ''
+        piece !== 0 ? ` with ${piece > 0 ? 'black' : 'white'} ${Math.abs(piece) === 2 ? 'king' : 'piece'}` : ''
       }${isValidMove ? ', valid move' : ''}`}
     >
       {/* Valid move indicator */}
       {isValidMove && piece === 0 && (
         <div 
           className={`
-            absolute w-4 h-4 rounded-full
-            ${isCapture ? 'bg-red-400/60' : 'bg-green-400/60'}
+            absolute w-3 h-3 rounded-full
+            ${isCapture ? 'bg-black' : 'bg-gray-400'}
           `}
           aria-hidden="true"
         />
