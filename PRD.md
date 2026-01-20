@@ -123,4 +123,3 @@ All move generation functions accept a `GameState` and return a list of legal mo
 - Preference for React vs Preact (bundle size vs familiarity).
 
 ---
-*Prepared by the AI assistant on **2026‑01‑20**.*
